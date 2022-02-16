@@ -1,2 +1,2 @@
-web: npm run devStart 
+web: npm start
 worker: node server.js
