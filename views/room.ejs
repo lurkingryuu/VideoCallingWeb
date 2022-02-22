@@ -15,10 +15,36 @@
     <script src="script.js" defer></script>
     <title>DIY Final Project</title>
     <style>
-      *{
-        background-image: url("../public/digital-art-neon-bubbles.jpg");
+      body{
+        width: 100%;
+        align-items : center;
+        height: 100%;
+         
+
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Background image doesn't tile */
+        background-repeat:repeat;
+
+        /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+        background-attachment: fixed;
+
+        /* This is what makes the background image rescale based
+        on the container's size */
+        background-size: cover;
+
+        /* Set a background color that will be displayed
+        while the background image is loading */
+        /* background-color: green; */
+        overflow: hidden;
+
+        /* Location of the image */
+        background-image:url('digital-art-neon-bubbles.jpg') ;
       }
       #video-grid {
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(auto-fill, 600px);
         grid-auto-rows: 450px;
